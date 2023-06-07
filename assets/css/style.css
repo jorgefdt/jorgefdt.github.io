@@ -980,3 +980,56 @@ textarea.input-field {
   padding-top: 115px;
   padding-bottom: 50px;
 }
+
+
+/* 
+ * My projects grid.
+ */
+.grid-container {
+  display: grid;
+  gap: 20px 1px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player:nth-of-type(odd) {
+  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+  z-index: 1;
+  height: 320px;
+  width: 480px;
+}
+.player:nth-of-type(even) {
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  z-index: 1;
+  height: 320px;
+  width: 480px;
+}
+.hrounded:nth-of-type(odd) {
+  border-radius: 15px 0 0 15px;
+}
+.hrounded:nth-of-type(even) {
+  border-radius: 0 15px 15px 0;
+}
+.my-project-desc {
+  padding: 16px;
+  background-color: #555;
+  color: #fff;
+}
+.my-project {
+  padding: 4px;
+  background-color: #EE9438;
+  color: 0;
+} 
