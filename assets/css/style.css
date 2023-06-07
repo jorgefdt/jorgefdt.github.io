@@ -1022,6 +1022,8 @@ textarea.input-field {
 .project-iframe {
   width: 480px;
   height: 320px;
+  border: none;
+  /* allow: fullscreen; */
 }
 
 .player {
