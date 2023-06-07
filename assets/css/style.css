@@ -1017,14 +1017,23 @@ textarea.input-field {
 .my-project {
   padding: 8px;
   background-color: #EE9438;
+  width: 480px;
+  height: 320px;
 } 
+
+.my-project-desc >ul > li { list-style: disc; }
 
 .project-iframe {
   width: 480px;
   height: 320px;
   border: none;
-  /* allow: fullscreen; */
 }
+.project-img {
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 .player {
   border-radius: 0;
