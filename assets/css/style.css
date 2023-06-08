@@ -116,3 +116,47 @@
   background-color: rebeccapurple;
 }
 
+
+/* === flexbox */
+
+.j-projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+
+  border: 1px solid red;
+}
+
+.j-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+
+  /* fake */
+  border: 1px solid blue;
+  min-height: 120px;
+  min-width: 300px;
+  /* max-width: 600px; */
+}
+
+.j-project > .j-project-title {
+  border: 1px dotted maroon;
+  text-align: center;
+  /* font-size: 25px; */
+  font-size: large;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.j-project > .j-project-desc {
+  border: 1px dotted violet;
+  background-color:#444;
+}
+
+.j-project > .j-project-media {
+  border: 1px dotted white;
+  background-color:rgb(236, 114, 69);
+  /* max-width: 100%; */
+}

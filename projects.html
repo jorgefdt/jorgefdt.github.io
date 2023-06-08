@@ -14,53 +14,115 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script> -->
 </head>
 
 <body class="dark_theme" style="background-color: hsl(0, 0%, 12%);">
     <main>
-        <article class="container">
+        <article class="container" style="min-height: 1500px;">
             <section>
-                <h2 class="h3 section-title">Some Fun Projects!</h2>
-                <p class="section-text">
-                    Since I have memory, I have dedicated some (lot!) of my non-working time to creating stuff.
-                    Normally software, but sometimes other things.
-                    Follows some of my personal projects, I hope you have some fun!
-                </p>
-
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                    uk-slideshow="animation: push; autoplay: true; autoplay-interval: 3000;">
-                    <ul class="uk-slideshow-items">
-                        <li>
-                            <img src="projects/tooling.png" alt="" uk-cover>
-                            <div class="uk-position-bottom uk-text-center">
-                                <h3 class="uk-margin-remove">Overlay Bottom</h3>
-                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="j-projects-container" id="container">
+                    <!-- PROJECT: Perlin Noise Fields -->
+                    <div class="j-project">
+                        <div class="j-project-title">Perlin Noise Fields</div>
+                        <div class="j-project-desc">
+                            <ul>
+                                <li>fields simulation</li>
+                                <li>Perlin noise</li>
+                                <li>3D graphics</li>
+                                <li>iOS mobile app</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                        <div class="j-project-media">
+                            <div class="videoIframeWrapper">
+                                <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
+                                    allow="fullscreen; autoplay"></iframe>
                             </div>
-                        </li>
-                        <li>
-                            <img src="projects/sensor-devices-screen.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <iframe src="https://www.youtube.com/embed/mde0Y6brTmM" allow="fullscreen"
-                                uk-cover></iframe>
-                        </li>
-                        <li>
-                            <video autoplay loop muted playsinline uk-cover
-                                src="./projects/pentagon-double-scara-robot/2scara-random.MOV"> </video>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
 
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#"
-                        uk-slidenav-previous uk-slideshow-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#"
-                        uk-slidenav-next uk-slideshow-item="next"></a>
+                    <!-- PROJECT: Inverted Pendulum -->
+                    <div class="j-project">
+                        <div class="j-project-title">Inverted Pendulum</div>
+                        <div class="j-project-desc">
+                            In eu anim est veniam. Adipisicing adipisicing nulla nostrud irure consequat proident mollit
+                            incididunt
+                            nulla minim commodo culpa velit duis deserunt proident pariatur.
+                            <br>
+                            <br>
+                            Pariatur ullamco esse ut ea adipisicing tempor consectetur incididunt qui elit laborum.
+                            Velit occaecat esse
+                            Lorem sint mollit.
+                        </div>
+                        <div class="j-project-media">
+                            <div class="videoIframeWrapper">
+                                <iframe src="https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&loop=1"
+                                    allow="fullscreen; autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
-                    <ul class="uk-slideshow-nav uk-dotnav  uk-flex-center uk-margin "></ul>
+                    <!-- PROJECT: Devices and Sensors -->
+                    <div class="j-project">
+                        <div class="j-project-title">Devices and Sensors</div>
+                        <div class="j-project-desc">
+                            nulla minim commodo culpa velit duis deserunt proident pariatur.
+                        </div>
+                        <div class="j-project-media">
+                            <img src="projects/sensor-devices-screen.png"></img>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT: Double Scara Robot -->
+                    <div class="j-project">
+                        <div class="j-project-title">Double Scara Robot</div>
+
+                        <div class="j-project-desc">
+                            nulla minim commodo culpa velit duis deserunt proident pariatur.
+                        </div>
+                        <div class="j-project-media">
+                            <video controls autoplay muted loop>
+                                <source src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT: Tooling/VisualTodo -->
+                    <div class="j-project">
+                        <div class="j-project-title">Tooling/VisualTodo</div>
+                        <div class="j-project-desc">
+                            nulla minim commodo culpa velit duis deserunt proident pariatur.
+                        </div>
+                        <div class="j-project-media">
+                            <figure>
+                                <img src="projects/tooling.png"></img>
+                                <figcaption style="color: #fff;">TOOLING</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+                    <!-- PROJECT: Cubes-City -->
+                    <div class="j-project">
+                        <div class="j-project-title">Cubes-City</div>
+                        <div class="j-project-desc">
+                            nulla minim commodo culpa velit duis deserunt proident pariatur.
+                        </div>
+                        <div class="j-project-media">
+                            <video controls autoplay muted loop>
+                                <source src="./projects/cubes-city/RPReplay_Final1686161293.mov">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+
         </article>
     </main>
 </body>
