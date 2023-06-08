@@ -60,12 +60,7 @@
   border: none;
 }
 
-.project-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
+/* Wrap iframes meant to display YouTube videos with this. */
 .videoIframeWrapper{
   position: relative;
   height: 0;
