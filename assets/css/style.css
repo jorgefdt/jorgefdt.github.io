@@ -50,8 +50,8 @@
 } 
 
 .project-iframe {
-  width: 480px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   border: none;
 }
 .project-img {
@@ -60,7 +60,7 @@
   max-height: 100%;
 }
 .project-video {
-  width: 480px;
-  height: 320px;
+  width: 100% !important;
+  height: auto !important;
   border: none;
 }
