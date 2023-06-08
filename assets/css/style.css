@@ -49,12 +49,15 @@
   z-index: 0;
 } 
 
-.project-img {
-  border: none;
+/* Style project images. */
+.my-project > img {
   width: 100%;
   height: auto;
+  border: none;
 }
-.project-video {
+
+/* Style project videos. */
+.my-project > video {
   width: 100% !important;
   height: auto !important;
   border: none;
@@ -67,7 +70,7 @@
   /* falls back to 16/9, but otherwise uses ratio from HTML */
   padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
 }
-.videoIframeWrapper iframe {
+.videoIframeWrapper > iframe {
   position: absolute;
   top: 0;
   left: 0;
