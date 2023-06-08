@@ -45,9 +45,9 @@
 .my-project-desc >ul > li { list-style: disc; }
 
 .my-project {
-  /* border: 2px solid #ff8000; */
+  border: 2px solid #ff8000;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 } 
 
 .project-iframe {
