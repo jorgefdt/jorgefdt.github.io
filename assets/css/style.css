@@ -139,6 +139,9 @@
   min-height: 120px;
   min-width: 300px;
   /* max-width: 600px; */
+
+  overflow: hidden;
+  z-index: 0;
 }
 
 .j-project > .j-project-title {
@@ -159,4 +162,22 @@
   border: 1px dotted white;
   background-color:rgb(236, 114, 69);
   /* max-width: 100%; */
+  width: 200px;
+
+  width: 100%;
+  height: auto;
+}
+
+/* Style project images. */
+.j-project img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Style project videos. */
+.j-project video {
+  width: 100% !important;
+  height: auto !important;
+  border: none;
 }
