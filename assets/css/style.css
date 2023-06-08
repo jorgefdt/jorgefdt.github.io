@@ -50,14 +50,14 @@
 } 
 
 /* Style project images. */
-.my-project > img {
+.my-project img {
   width: 100%;
   height: auto;
   border: none;
 }
 
 /* Style project videos. */
-.my-project > video {
+.my-project video {
   width: 100% !important;
   height: auto !important;
   border: none;
@@ -78,3 +78,41 @@
   height: 100%;
   border: none;
 }
+
+
+/* Carousel 1 */
+.my-project ul {
+  display: flex;
+  list-style: none;
+  max-width: 600px;
+  margin-block: 2rem;
+  margin-inline: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;  
+}
+
+.my-project li {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 3rem;
+
+  aspect-ratio: 2/1;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  /* background-color: yellow; */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-project li:nth-child(odd) {
+  background-color: salmon;
+}
+
+.my-project li:nth-child(even) {
+  background-color: rebeccapurple;
+}
+
