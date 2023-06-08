@@ -995,11 +995,12 @@ textarea.input-field {
   padding: 0;
 }
 .grid-container div {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 400px;  
+  width: 400px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
 .hrounded:nth-of-type(odd) {
@@ -1014,14 +1015,14 @@ textarea.input-field {
   background-color: #222;
   color: #9E9E9E;
 }
+.my-project-desc >ul > li { list-style: disc; }
+
 .my-project {
-  padding: 8px;
-  background-color: #ff8000;
-  width: 480px;
-  height: 320px;
+  border: 2px solid #ff8000;
+  overflow: hidden;
+  z-index: -1;
 } 
 
-.my-project-desc >ul > li { list-style: disc; }
 
 .project-iframe {
   width: 480px;
@@ -1037,13 +1038,6 @@ textarea.input-field {
   width: 480px;
   height: 320px;
   border: none;
-}
-
-
-.player {
-  border-radius: 0;
-  overflow: hidden;
-  z-index: 1;
 }
 
 /* .player:nth-of-type(odd) {
