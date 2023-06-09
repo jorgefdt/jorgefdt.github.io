@@ -122,50 +122,53 @@
 .j-projects-container {
   display: flex;
   flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  place-content: center;
+  gap: 30px;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .j-project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 1px;
 
-  /* fake */
-  border: 1px solid blue;
-  min-height: 120px;
+  /* Limit min and max project width and height. */
   min-width: 300px;
-  /* max-width: 600px; */
+  max-width: 800px;
+  min-height: 100px;
 
+  /* Card effect. */
   overflow: hidden;
   z-index: 0;
+
+  /* border: 1px solid blue; */
 }
 
 .j-project > .j-project-title {
-  border: 1px dotted maroon;
   text-align: center;
-  /* font-size: 25px; */
-  font-size: large;
-  font-weight: 600;
+  font-size: 25px;
+  /* font-weight: 600; */
   color: aliceblue;
+
+  /* border: 1px dotted maroon; */
 }
 
 .j-project > .j-project-desc {
-  border: 1px dotted violet;
-  background-color:#444;
+  background-color:#222;
+  color: #9e9e9e;
+  
+  /* border: 1px dotted violet; */
 }
 
 .j-project > .j-project-media {
-  border: 1px dotted white;
-  background-color:rgb(236, 114, 69);
-  /* max-width: 100%; */
-  width: 200px;
-
   width: 100%;
   height: auto;
+  /* background-color:rgb(236, 114, 69); */
+  /* border: 1px dotted white; */
 }
 
 /* Style project images. */
