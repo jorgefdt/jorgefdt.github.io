@@ -9,6 +9,12 @@
 }
 
 
+span.name {
+  font-weight: 600;
+  color: aqua;
+  display: inline;
+}
+
 /* === Projects flexbox === */
 
 .j-projects-container {
