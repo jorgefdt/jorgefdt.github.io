@@ -84,13 +84,10 @@
 
 .j-projects-container {
   display: flex;
-  /* flex-flow: row wrap; */
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
   place-content: center;
-  gap: 30px;
-
-  /* border: 1px solid red; */
+  gap: 20px;
 }
 
 .j-project {
@@ -98,11 +95,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1px;
 
   /* Limit min and max project width and height. */
   min-width: 300px;
-  max-width: 800px;
+  max-width: 500px;
   min-height: 100px;
 
   /* Card effect. */
