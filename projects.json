@@ -1,5 +1,5 @@
-{
-  "projects": [
+
+var projects = [
     {
       "name": "Perlin Noise Fields",
       "description": "Random fields simulations based on Perlin noise. 3D graphics on <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
@@ -144,6 +144,5 @@
         {}
       ]
     }
-  ]
-  }
+  ];
 
