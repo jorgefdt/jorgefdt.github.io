@@ -18,7 +18,7 @@
   "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).|",
   "media": [{
 "type":"image", 
-"url":"projects/sensor-devices-screen.png"></img>
+"url":"projects/sensor-devices-screen.png"
 }]},
 
 
@@ -26,7 +26,7 @@
   "description": "Pentagon/double scara robot analysis/sims and design. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.|",
   "media": [{
 "type":"video", 
-"url": "./projects/pentagon-double-scara-robot/2scara-random.MOV">
+"url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
 
 }]},
 
@@ -42,7 +42,7 @@
   "description": "Interesting optimization algorithm visualization. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
   "media": [{
 "type":"video", 
-"url": "./projects/cubes-city/RPReplay_Final1686161293.mov">
+"url": "./projects/cubes-city/RPReplay_Final1686161293.mov"
 }]}, 
 
 { "name": "HAL-9001",
