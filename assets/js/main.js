@@ -1,54 +1,64 @@
 function loadProjects() {
-  //0alert("loading");
-  projects.forEach((project, i) => {
-    createProject(i, card["button"], card["body"]);
-  });
+  projects.forEach((project, i) => createProject(i, project) );
 }
 
 loadProjects();
 
+/*
+<div class="j-project">
+  <div class="j-project-title">Perlin Noise Fields</div>
+  <div class="j-project-desc">
+    Random fields simulations based on Perlin noise. 3D graphics on <span class="name">p5.js</span> on <span
+      class="name">iOS</span>.
+  </div>
+  <div class="j-project-media">
+    <div class="videoIframeWrapper">
+      <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
+        allow="fullscreen; autoplay"></iframe>
+    </div>
+  </div>
+</div>
+*/
+function createProject(id, projectData) {
+  // Get the template.
+  var template = document.getElementById("project-template").content;
 
-function createProject(id, buttonText, cardBody) {
-  var card = document.getElementById("cardTemplate").content;
+  // Clone the template.
+  var project = template.cloneNode(true);
+  
+  // Configure project from project data.
+  project.querySelectorAll(".j-project-title")[0].innerHTML = projectData.name;
+  project.querySelectorAll(".j-project-desc")[0].innerHTML = projectData.description;
 
-  //clone the card template
-  var cln = card.cloneNode(true);
+  var mediaData = projectData.media[0];
+  var projMedia = project.querySelectorAll(".j-project-media")[0]; 
+  projMedia.innerHTML = mediaData.type;
+  var mediaTemplate;
+  if (mediaData.type == "videoIframe") {
+    mediaTemplate = "videoIframeWrapper-media-template";    
+    // config
+  } else if (mediaData.type == "video") {
+    mediaTemplate = "video-media-template";
+  } else if (mediaData.type == "image") {
+    mediaTemplate = "img-media-template";
+  }
+   
+  if (projMedia) {
+    var t = document.getElementById(mediaTemplate).content;
+    var n = t.cloneNode(true);
+    
+    var ns = n.querySelectorAll(".j-source")[0];
+    if (ns) {
+      ns.setAttribute("src", mediaData.url);
+    }
+  
+    projMedia.appendChild(n);    
+  }
 
-  //create the custom heading and collapse id
-  let headingId = "heading-" + id;
-  let collapseId = "collapse-" + id;
-
-  //set all the attributes
-  cln.querySelectorAll(".card-header")[0].id = headingId;
-  cln.querySelectorAll(".card-header button")[0].setAttribute("data-target", "#" + collapseId);
-  cln.querySelectorAll(".card-header button")[0].setAttribute("aria-controls", collapseId);
-  cln.querySelectorAll(".card-body")[0].parentElement.id = collapseId;
-  cln.querySelectorAll(".card-body")[0].parentElement.setAttribute("aria-labelledby", headingId);
-
-  //set the content
-  cln.querySelectorAll(".card-header button")[0].innerHTML = buttonText;
-  cln.querySelectorAll(".card-body")[0].innerHTML = cardBody;
-
-  //add the card to the accordion
-  document.getElementById("accordion").appendChild(cln);
+  // Add project to the container.
+  document.getElementById("projects").appendChild(project);
 }
 
-function createProject0(id, content) {
-  return `<div class="card">
-              <div class="card-header" id="heading-${id}">
-                  <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-${id}" aria-expanded="false" aria-controls="collapse-${id}">Collapsible Group Item #${id}</button>
-                  </h5>
-              </div>
-              <div id="collapse-${id}" class="collapse" aria-labelledby="heading-${id}">
-                  <div class="card-body">
-                      ${content}
-                  </div>
-              </div>
-          </div>`;
+function addMedia() {
+  
 }
-        
-// $(function(){
-//     $('#projects').append($(createProject('1', "Lorem ipsum")));
-//     $('#projects').append($(createProject('2', createProject(3, "Dolor sit amnet"))));
-//   });

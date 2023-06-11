@@ -6,31 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="assets/js/main.js" defer></script>
   <script src="projects.json"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
   
-  <body style="background-color:#333; color:#fff;">
-    <h1>Hello, world!</h1>
+  <body style="background-color:#333; color:#fff;">    
+    <div class="container" id="projects"></div>
+        
+    <template id="project-template">
+      <div class="j-project">
+        <div class="j-project-title">UNNAMED</div>
+        <div class="j-project-desc"></div>
+        <div class="j-project-media"></div>
+      </div>     
+    </template>
     
-    <div class="container" id="projects">
-    </div>
-
-    <template id="cardTemplate">
-      <!-- Card -->
-      <div class="card">
-        <div class="card-header">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
-            </button>
-          </h5>
-        </div>
-
-        <div class="collapse" data-parent="#accordion">
-          <div class="card-body">
-
-        </div>
+    <template id="video-media-template">
+      <video controls autoplay muted loop>
+        <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
+      </video>
+    </template>
+    
+    <template id="videoIframeWrapper-media-template">
+      <div class="videoIframeWrapper">
+        <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
+                allow="fullscreen; autoplay"
+                class="j-source">
+        </iframe>
       </div>
-    </div>
-    <!-- /card -->
-  </template>    
+    </template>
+    
+    <template id="img-media-template">
+      <img src="projects/sensor-devices-screen.png" class="j-source"></img>
+    </template>
  </body>
 </html>
