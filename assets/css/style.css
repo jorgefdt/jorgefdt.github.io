@@ -32,7 +32,7 @@ span.name {
   justify-content: flex-start;
 
   /* Limit min and max project width and height. */
-  min-width: 300px;
+  min-width: 400px;
   max-width: 500px;
   min-height: 100px;
 
