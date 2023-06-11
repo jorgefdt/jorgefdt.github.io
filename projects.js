@@ -17,10 +17,10 @@ var projects = [
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
       },
-      // {
-      //   "type": "image",
-      //   "url": "projects/tooling.png"
-      // },     
+      {
+        "type": "image",
+        "url": "projects/tooling.png"
+      },     
     ]
   },
   {
