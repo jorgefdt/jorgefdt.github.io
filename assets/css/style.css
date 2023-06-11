@@ -33,7 +33,7 @@ span.name {
 
   /* Limit min and max project width and height. */
   min-width: 400px;
-  max-width: 500px;
+  max-width: 400px;
   min-height: 100px;
 
   /* Card effect. */
