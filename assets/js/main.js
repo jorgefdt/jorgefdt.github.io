@@ -4,61 +4,56 @@ function loadProjects() {
 
 loadProjects();
 
-/*
-<div class="j-project">
-  <div class="j-project-title">Perlin Noise Fields</div>
-  <div class="j-project-desc">
-    Random fields simulations based on Perlin noise. 3D graphics on <span class="name">p5.js</span> on <span
-      class="name">iOS</span>.
-  </div>
-  <div class="j-project-media">
-    <div class="videoIframeWrapper">
-      <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
-        allow="fullscreen; autoplay"></iframe>
-    </div>
-  </div>
-</div>
-*/
-function createProject(id, projectData) {
-  // Get the template.
-  var template = document.getElementById("project-template").content;
 
-  // Clone the template.
-  var project = template.cloneNode(true);
+function createProject(id, projectData) {
+  var project = cloneTemplate("project-template");
   
   // Configure project from project data.
   project.querySelectorAll(".j-project-title")[0].innerHTML = projectData.name;
   project.querySelectorAll(".j-project-desc")[0].innerHTML = projectData.description;
+  projectData.media.forEach(mediaData => {
+    var node = createMediaNode(mediaData);
+    if (node) {
+      var projMedia = project.querySelectorAll(".j-project-media")[0]; 
+      projMedia.appendChild(node);
+    } else {
+      console.warn("Could not create node for mediaData: " + mediaData);
+    }
+  });
+  
+  // Add project to the container.
+  document.getElementById("projects").appendChild(project);
+}
 
-  var mediaData = projectData.media[0];
-  var projMedia = project.querySelectorAll(".j-project-media")[0]; 
-  projMedia.innerHTML = mediaData.type;
+// Creates DOM node to display mediaData. Returns null if error.
+function createMediaNode(mediaData) {
+  var mediaNode = null;
   var mediaTemplate;
   if (mediaData.type == "videoIframe") {
     mediaTemplate = "videoIframeWrapper-media-template";    
-    // config
   } else if (mediaData.type == "video") {
     mediaTemplate = "video-media-template";
   } else if (mediaData.type == "image") {
     mediaTemplate = "img-media-template";
   }
    
-  if (projMedia) {
-    var t = document.getElementById(mediaTemplate).content;
-    var n = t.cloneNode(true);
-    
+  if (mediaTemplate) {
+    var n = cloneTemplate(mediaTemplate);
     var ns = n.querySelectorAll(".j-source")[0];
     if (ns) {
       ns.setAttribute("src", mediaData.url);
+      mediaNode = n;
     }
-  
-    projMedia.appendChild(n);    
   }
-
-  // Add project to the container.
-  document.getElementById("projects").appendChild(project);
+  
+  return mediaNode;
 }
 
-function addMedia() {
-  
+// Creates a clone of the template with the specified id and returns it.
+function cloneTemplate(templateId) {
+  // Get the template.
+  var template = document.getElementById(templateId).content;
+
+  // Clone the template.
+  return template.cloneNode(true);  
 }

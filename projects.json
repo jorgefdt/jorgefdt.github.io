@@ -7,7 +7,15 @@ var projects = [
         {
           "type": "videoIframe",
           "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
-        }
+        },
+        {
+          "type": "image",
+          "url": "projects/tooling.png"
+        },
+        {
+          "type": "video",
+          "url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
+        }        
       ]
     },
     {
