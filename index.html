@@ -15,6 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+    <script src="projects.json"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
   <script src="assets/js/main.js" defer></script>
@@ -122,18 +123,13 @@
           Follows some of my personal projects, I hope you have some fun!
         </p>
 
+        <div class="j-projects-container" id="projects-container"></div>
+          
+        <hr/>
+        
         <!-- PROJECTS START -->
         <div class="j-projects-container" id="container">
-          <!-- PROJECT: EMPTY -->
-          <!-- <div class="j-project">
-                <div class="j-project-title">VERY SMALL EXAMPLE</div>
-                <div class="j-project-desc">blah </div>
-                <div class="j-project-media">
-                    <div style="width:200px; height: 200px;">
-                    </div>
-                </div>
-            </div> -->
-
+          <!--
           <div class="j-project">
             <div class="j-project-title">Carousel example</div>
             <div class="j-project-desc">blah</div>
@@ -170,6 +166,7 @@
 
             </div>
           </div>
+        -->
             
           <!-- PROJECT: Perlin Noise Fields -->
           <div class="j-project">
@@ -445,6 +442,35 @@
   <a href="#top" class="go-top" data-go-top title="Go to Top">
     <ion-icon name="arrow-up"></ion-icon>
   </a>
+  
+  <!-- ===== TEMPLATES ===== -->
+    <template id="project-template">
+      <div class="j-project">
+        <div class="j-project-title">UNNAMED</div>
+        <div class="j-project-desc"></div>
+        <div class="j-project-media"></div>
+      </div>     
+    </template>
+    
+    <template id="video-media-template">
+      <video controls autoplay muted loop>
+        <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
+      </video>
+    </template>
+    
+    <template id="videoIframeWrapper-media-template">
+      <div class="videoIframeWrapper">
+        <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
+                allow="fullscreen; autoplay"
+                class="j-source">
+        </iframe>
+      </div>
+    </template>
+    
+    <template id="img-media-template">
+      <img src="projects/sensor-devices-screen.png" class="j-source"></img>
+    </template>
+  
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

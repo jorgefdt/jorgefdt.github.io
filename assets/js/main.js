@@ -22,7 +22,7 @@ function createProject(id, projectData) {
   });
   
   // Add project to the container.
-  document.getElementById("projects").appendChild(project);
+  document.getElementById("projects-container").appendChild(project);
 }
 
 // Creates DOM node to display mediaData. Returns null if error.
