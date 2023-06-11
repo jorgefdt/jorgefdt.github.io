@@ -18,54 +18,37 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
 
-  <script src="projects.json"></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="projects.js"></script>
+  <script src="assets/js/projects-loader.js" defer></script>
 </head>
-  
-  <body style="background-color:#333; color:#fff;">
-    <div class="j-projects-container" id="projects-container">
-      
+
+<body style="background-color:#1f1f1f; color:#fff;">
+  <div class="j-projects-container" id="projects-container"></div>
+
+  <!-- ===== TEMPLATES ===== -->
+  <template id="project-template">
     <div class="j-project">
-      <div class="j-project-title">Double-Scara Robot</div>
-      <div class="j-project-desc">
-        Pentagon/double scara robot analysis/sims and design. <span class="name">Java</span> + <span
-          class="name">Processing</span> on <span class="name">iOS</span>.
-      </div>
-      <div class="j-project-media">
-        <video controls autoplay muted loop>
-          <source src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
-        </video>
-      </div>
+      <div class="j-project-title">UNNAMED</div>
+      <div class="j-project-desc"></div>
+      <div class="j-project-media"></div>
     </div>
-    <hr />     
+  </template>
+
+  <template id="video-media-template">
+    <video controls autoplay muted loop>
+      <source src="" class="j-source">
+    </video>
+  </template>
+
+  <template id="videoIframeWrapper-media-template">
+    <div class="videoIframeWrapper">
+      <iframe src="" allow="fullscreen; autoplay" class="j-source"></iframe>
     </div>
-    
-    <!-- ===== TEMPLATES ===== -->    
-    <template id="project-template">
-      <div class="j-project">
-        <div class="j-project-title">UNNAMED</div>
-        <div class="j-project-desc"></div>
-        <div class="j-project-media"></div>
-      </div>     
-    </template>
-    
-    <template id="video-media-template">
-      <video controls autoplay muted loop>
-        <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
-      </video>
-    </template>
-    
-    <template id="videoIframeWrapper-media-template">
-      <div class="videoIframeWrapper">
-        <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
-                allow="fullscreen; autoplay"
-                class="j-source">
-        </iframe>
-      </div>
-    </template>
-    
-    <template id="img-media-template">
-      <img src="projects/sensor-devices-screen.png" class="j-source"></img>
-    </template>
- </body>
+  </template>
+
+  <template id="img-media-template">
+    <img src="projects/sensor-devices-screen.png" class="j-source"></img>
+  </template>
+</body>
+
 </html>

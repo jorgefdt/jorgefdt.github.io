@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
-  
-  <script src="projects.json"></script>
-<!--   <script src="assets/js/main.js" defer></script> -->
+
+  <script src="projects.js"></script>
+  <script src="assets/js/projects-loader.js" defer></script>
 </head>
 
 <body id="top" class="dark_theme">
@@ -124,10 +124,7 @@
           Follows some of my personal projects, I hope you have some fun!
         </p>
 
-        <div class="j-projects-container" id="projects-container"></div>
-        
-        <!-- PROJECTS START -->
-        <div class="j-projects-container" id="container">
+        <div class="j-projects-container" id="projects-container">
           <!--
           <div class="j-project">
             <div class="j-project-title">Carousel example</div>
@@ -166,221 +163,8 @@
             </div>
           </div>
         -->
-            
-
-          <div class="j-project">
-            <div class="j-project-title">Perlin Noise Fields</div>
-            <div class="j-project-desc">
-              Random fields simulations based on Perlin noise. 3D graphics on <span class="name">p5.js</span> on <span
-                class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-              <div class="videoIframeWrapper">
-                <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
-                  allow="fullscreen; autoplay"></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="j-project" style="order:-1;">
-            <div class="j-project-title">Inverted Pendulum</div>
-            <div class="j-project-desc">
-              Different inverted pendulums implementations, self-balancing robot, and simulations on <span
-                class="name">Webots</span> robotic simulation framework.
-            </div>
-            <div class="j-project-media">
-              <div class="videoIframeWrapper">
-                <iframe src="https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1"
-                  allow="fullscreen; autoplay"></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Sensors/hand tracking</div>
-            <div class="j-project-desc">
-              Sensor devices experimentation and alpha testing (<span class="name">LEAP</span>, <span
-                class="name">MIO</span>, <span class="name">OpenCV</span> AI Kit).
-            </div>
-            <div class="j-project-media">
-              <img src="projects/sensor-devices-screen.png"></img>
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Double-Scara Robot</div>
-            <div class="j-project-desc">
-              Pentagon/double scara robot analysis/sims and design. <span class="name">Java</span> + <span
-                class="name">Processing</span> on <span class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-              <video controls autoplay muted loop>
-                <source src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
-              </video>
-            </div>
-          </div>
-
-          <!-- PROJECT: Tooling/VisualTodo -->
-          <div class="j-project">
-            <div class="j-project-title">Tooling</div>
-            <div class="j-project-desc">
-              My To-do textual notation (<span class="name">Markdown</span>) rendered to <span
-                class="name">Trello</span>-like UI. <span class="name">Java</span> server + plain <span
-                class="name">HTML</span>/<span class="name">CSS</span>/<span class="name">JavaScript</span>.
-            </div>
-            <div class="j-project-media">
-              <figure>
-                <img src="projects/tooling.png"></img>
-                <!-- <figcaption style="color: #fff;">TOOLING</figcaption> -->
-              </figure>
-            </div>
-          </div>
-
-          <!-- PROJECT: Cubes-City -->
-          <div class="j-project">
-            <div class="j-project-title">Cubes-City</div>
-            <div class="j-project-desc">
-              Interesting optimization algorithm visualization. <span class="name">p5.js</span> on <span
-                class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-              <video controls autoplay muted loop>
-                <source src="./projects/cubes-city/RPReplay_Final1686161293.mov">
-              </video>
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">HAL-9001</div>
-            <div class="j-project-desc">
-              <span class="name">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">3D scanner</div>
-            <div class="j-project-desc">
-              Iterations of my room 3D scanner.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">HCI</div>
-            <div class="j-project-desc">
-              Experiments in economic (processing wise) emotional expression using visuals and sounds. Sound and face
-              gestures libraries.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Walkers</div>
-            <div class="j-project-desc">
-              Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs,
-              simulations on <span class="name">Webots</span> robotic simulation framework.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">IMU</div>
-            <div class="j-project-desc">
-              IMU (Inertial Measuring Unit) Experiments on mobile device. <span class="name">Java</span> + <span
-                class="name">Processing</span> on
-              <span class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Physics engine 2D</div>
-            <div class="j-project-desc">
-              2D physics engine implementation and demo using <span class="name">p5.js</span> on <span
-                class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Boids + predators simu</div>
-            <div class="j-project-desc">
-              Classical <a href="https://en.m.wikipedia.org/wiki/Boids">Boids</a> simulation of emergent behaviour, extended with predators and short range void visual
-              perception. <span class="name">p5.js</span> on <span class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">FFT sound analysis visualization </div>
-            <div class="j-project-desc">
-              Sound processing, FFT, frequency filtering, and visualization. <span class="name">Java</span> + <span
-                class="name">Processing</span> framework.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Pool physics 2d & test bench</div>
-            <div class="j-project-desc">
-              Pool game dynamics, visualization, and virtual experimentation test bench.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Image processing primitives</div>
-            <div class="j-project-desc">
-              Simple real-time image processing primitives.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Wind dynamics simu</div>
-            <div class="j-project-desc">
-              Image decomposition and wind simulation. <span class="name">p5.js</span> on <span class="name">iOS</span>.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-          <div class="j-project">
-            <div class="j-project-title">Warp</div>
-            <div class="j-project-desc">
-              Ditto.
-            </div>
-            <div class="j-project-media">
-
-            </div>
-          </div>
-
-
-
         </div>
-        <!-- PROJECTS END -->
+
       </section>
 
       <hr style="margin: 50px 0; border: none; height: 1px; background-color: #444;" />
@@ -438,35 +222,34 @@
   <a href="#top" class="go-top" data-go-top title="Go to Top">
     <ion-icon name="arrow-up"></ion-icon>
   </a>
-  
+
   <!-- ===== TEMPLATES ===== -->
-    <template id="project-template">
-      <div class="j-project">
-        <div class="j-project-title">UNNAMED</div>
-        <div class="j-project-desc"></div>
-        <div class="j-project-media"></div>
-      </div>     
-    </template>
-    
-    <template id="video-media-template">
-      <video controls autoplay muted loop>
-        <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
-      </video>
-    </template>
-    
-    <template id="videoIframeWrapper-media-template">
-      <div class="videoIframeWrapper">
-        <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
-                allow="fullscreen; autoplay"
-                class="j-source">
-        </iframe>
-      </div>
-    </template>
-    
-    <template id="img-media-template">
-      <img src="projects/sensor-devices-screen.png" class="j-source"></img>
-    </template>
-  
+  <template id="project-template">
+    <div class="j-project">
+      <div class="j-project-title">UNNAMED</div>
+      <div class="j-project-desc"></div>
+      <div class="j-project-media"></div>
+    </div>
+  </template>
+
+  <template id="video-media-template">
+    <video controls autoplay muted loop>
+      <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
+    </video>
+  </template>
+
+  <template id="videoIframeWrapper-media-template">
+    <div class="videoIframeWrapper">
+      <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1" allow="fullscreen; autoplay"
+        class="j-source">
+      </iframe>
+    </div>
+  </template>
+
+  <template id="img-media-template">
+    <img src="projects/sensor-devices-screen.png" class="j-source"></img>
+  </template>
+
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
