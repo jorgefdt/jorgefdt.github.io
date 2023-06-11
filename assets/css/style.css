@@ -15,6 +15,7 @@ span.name {
   display: inline;
 }
 
+
 /* === Projects flexbox === */
 
 .j-projects-container {
@@ -32,8 +33,8 @@ span.name {
   justify-content: flex-start;
 
   /* Limit min and max project width and height. */
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 400px;
+  max-width: 400px;
   min-height: 100px;
 
   /* Card effect. */
@@ -41,6 +42,11 @@ span.name {
   z-index: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
   border-radius: 25px;
+}
+
+.j-project a {
+  display: clear;
+  color: red;
 }
 
 .j-project > .j-project-title {
