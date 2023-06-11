@@ -1,6 +1,16 @@
 
 var projects = [
     {
+      "name": "Double-Scara Robot",
+      "description": "Pentagon/double scara robot analysis/sims and design. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.|",
+      "media": [
+        {
+          "type": "video",
+          "url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
+        }
+      ]
+    },
+    {
       "name": "Perlin Noise Fields",
       "description": "Random fields simulations based on Perlin noise. 3D graphics on <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
       "media": [
@@ -11,11 +21,7 @@ var projects = [
         {
           "type": "image",
           "url": "projects/tooling.png"
-        },
-        {
-          "type": "video",
-          "url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
-        }        
+        },     
       ]
     },
     {
@@ -35,16 +41,6 @@ var projects = [
         {
           "type": "image",
           "url": "projects/sensor-devices-screen.png"
-        }
-      ]
-    },
-    {
-      "name": "Double-Scara Robot",
-      "description": "Pentagon/double scara robot analysis/sims and design. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.|",
-      "media": [
-        {
-          "type": "video",
-          "url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
         }
       ]
     },

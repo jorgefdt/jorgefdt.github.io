@@ -3,15 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="assets/js/main.js" defer></script>
-  <script src="projects.json"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style-old.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
+
+  <script src="projects.json"></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
   
-  <body style="background-color:#333; color:#fff;">    
-    <div id="projects-container"></div>
-        
+  <body style="background-color:#333; color:#fff;">
+    <div class="j-projects-container" id="projects-container">
+      
+    <div class="j-project">
+      <div class="j-project-title">Double-Scara Robot</div>
+      <div class="j-project-desc">
+        Pentagon/double scara robot analysis/sims and design. <span class="name">Java</span> + <span
+          class="name">Processing</span> on <span class="name">iOS</span>.
+      </div>
+      <div class="j-project-media">
+        <video controls autoplay muted loop>
+          <source src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
+        </video>
+      </div>
+    </div>
+    <hr />     
+    </div>
+    
+    <!-- ===== TEMPLATES ===== -->    
     <template id="project-template">
       <div class="j-project">
         <div class="j-project-title">UNNAMED</div>
