@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js" defer></script>
+  
+  <script src="projects.json"></script>
+<!--   <script src="assets/js/main.js" defer></script> -->
 </head>
 
 <body id="top" class="dark_theme">
@@ -113,7 +116,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <h2 class="h3 section-title">Some Fun Projects!</h2>
         <p class="section-text">
           Since I have memory, I have dedicated some (lot!) of my non-working time to creating stuff.
@@ -121,19 +124,50 @@
           Follows some of my personal projects, I hope you have some fun!
         </p>
 
+        <div class="j-projects-container" id="projects-container"></div>
+        
         <!-- PROJECTS START -->
         <div class="j-projects-container" id="container">
-          <!-- PROJECT: EMPTY -->
-          <!-- <div class="j-project">
-                <div class="j-project-title">VERY SMALL EXAMPLE</div>
-                <div class="j-project-desc">blah </div>
-                <div class="j-project-media">
-                    <div style="width:200px; height: 200px;">
-                    </div>
-                </div>
-            </div> -->
+          <!--
+          <div class="j-project">
+            <div class="j-project-title">Carousel example</div>
+            <div class="j-project-desc">blah</div>
+            <div class="j-project-media">
+              
+              <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000;">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="projects/tooling.png" alt="" uk-cover>
+                        <div class="uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="projects/sensor-devices-screen.png" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/mde0Y6brTmM" allow="fullscreen" uk-cover></iframe>
+                    </li>
+                    <li>
+                        <video autoplay loop muted playsinline uk-cover
+                            src="./projects/pentagon-double-scara-robot/2scara-random.MOV"> </video>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#"
+                    uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#"
+                    uk-slidenav-next uk-slideshow-item="next"></a>
+                <ul class="uk-slideshow-nav uk-dotnav  uk-flex-center uk-margin "></ul>
+              </div>
 
-          <!-- PROJECT: Perlin Noise Fields -->
+            </div>
+          </div>
+        -->
+            
+
           <div class="j-project">
             <div class="j-project-title">Perlin Noise Fields</div>
             <div class="j-project-desc">
@@ -142,14 +176,13 @@
             </div>
             <div class="j-project-media">
               <div class="videoIframeWrapper">
-                <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&loop=1"
+                <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
                   allow="fullscreen; autoplay"></iframe>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT: Inverted Pendulum -->
-          <div class="j-project">
+          <div class="j-project" style="order:-1;">
             <div class="j-project-title">Inverted Pendulum</div>
             <div class="j-project-desc">
               Different inverted pendulums implementations, self-balancing robot, and simulations on <span
@@ -157,13 +190,12 @@
             </div>
             <div class="j-project-media">
               <div class="videoIframeWrapper">
-                <iframe src="https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&loop=1"
+                <iframe src="https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1"
                   allow="fullscreen; autoplay"></iframe>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT: Devices and Sensors -->
           <div class="j-project">
             <div class="j-project-title">Sensors/hand tracking</div>
             <div class="j-project-desc">
@@ -175,7 +207,6 @@
             </div>
           </div>
 
-          <!-- PROJECT: Double Scara Robot -->
           <div class="j-project">
             <div class="j-project-title">Double-Scara Robot</div>
             <div class="j-project-desc">
@@ -185,7 +216,6 @@
             <div class="j-project-media">
               <video controls autoplay muted loop>
                 <source src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
-                Your browser does not support the video tag.
               </video>
             </div>
           </div>
@@ -216,7 +246,6 @@
             <div class="j-project-media">
               <video controls autoplay muted loop>
                 <source src="./projects/cubes-city/RPReplay_Final1686161293.mov">
-                Your browser does not support the video tag.
               </video>
             </div>
           </div>
@@ -224,7 +253,7 @@
           <div class="j-project">
             <div class="j-project-title">HAL-9001</div>
             <div class="j-project-desc">
-              <span class="name">2001 Space Odyssey</span>3D printed HAL-9000 replica with a voice assistant.
+              <span class="name">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant.
             </div>
             <div class="j-project-media">
 
@@ -289,7 +318,7 @@
           <div class="j-project">
             <div class="j-project-title">Boids + predators simu</div>
             <div class="j-project-desc">
-              Classical Boids simulation of emergent behaviour, extended with predators and short range void visual
+              Classical <a href="https://en.m.wikipedia.org/wiki/Boids">Boids</a> simulation of emergent behaviour, extended with predators and short range void visual
               perception. <span class="name">p5.js</span> on <span class="name">iOS</span>.
             </div>
             <div class="j-project-media">
@@ -409,6 +438,35 @@
   <a href="#top" class="go-top" data-go-top title="Go to Top">
     <ion-icon name="arrow-up"></ion-icon>
   </a>
+  
+  <!-- ===== TEMPLATES ===== -->
+    <template id="project-template">
+      <div class="j-project">
+        <div class="j-project-title">UNNAMED</div>
+        <div class="j-project-desc"></div>
+        <div class="j-project-media"></div>
+      </div>     
+    </template>
+    
+    <template id="video-media-template">
+      <video controls autoplay muted loop>
+        <source src="./projects/cubes-city/RPReplay_Final1686161293.mov" class="j-source">
+      </video>
+    </template>
+    
+    <template id="videoIframeWrapper-media-template">
+      <div class="videoIframeWrapper">
+        <iframe src="https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
+                allow="fullscreen; autoplay"
+                class="j-source">
+        </iframe>
+      </div>
+    </template>
+    
+    <template id="img-media-template">
+      <img src="projects/sensor-devices-screen.png" class="j-source"></img>
+    </template>
+  
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
