@@ -6,7 +6,15 @@ var projects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1&controls=0"
-      }
+      },
+      {
+        "type": "image",
+        "url": "./projects/inverted-pendulum/IMG_1220.JPG"
+      },
+      {
+        "type": "image",
+        "url": "./projects/inverted-pendulum/IMG_1711.png"
+      },
     ]
   },
   {
@@ -75,7 +83,30 @@ var projects = [
     "name": "HAL-9001",
     "description": "<span class=\"name\">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant.",
     "media": [
-      {}
+      {
+        "type": "image",
+        "url": "projects/hal-9001/019C79FF-B31B-453C-BADB-888ABB228BBF.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/hal-9001/EBD6FE43-F1D7-4A0F-83C6-DAB646AD9A0F-1782-0000016D73B1BB3F.JPEG"
+      },
+      {
+        "type": "image",
+        "url": "projects/hal-9001/IMG_0023.png"
+      },
+      {
+        "type": "image",
+        "url": "projects/hal-9001/IMG_0565.jpg"
+      },
+      {
+        "type": "image",
+        "url": "projects/hal-9001/IMG_0598.png"
+      },
+      {
+        "type": "image",
+        "url": "projects/hal-9001/IMG_1278.png"
+      },
     ]
   },
   {
@@ -119,14 +150,36 @@ var projects = [
     "name": "Walkers",
     "description": "Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs, simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
     "media": [
-      {}
+      {
+        "type": "image",
+        "url": "projects/walkers/IMG_1122.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/walkers/IMG_1169.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/walkers/IMG_1394.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/walkers/IMG_1395.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/walkers/IMG_9941.jpg"
+      },
     ]
   },
   {
     "name": "IMU",
     "description": "IMU (Inertial Measuring Unit) Experiments on mobile device. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
     "media": [
-      {}
+      {
+        "type": "video",
+        "url": "./projects/j-horizon/RPReplay_Final1635892005.mov"
+      },
     ]
   },
   {
