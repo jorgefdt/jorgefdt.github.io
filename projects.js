@@ -196,7 +196,10 @@ var projects = [
     "name": "Boids + predators simu",
     "description": "Classical <a href=\"https://en.m.wikipedia.org/wiki/Boids\">Boids</a> simulation of emergent behaviour, extended with predators and short range void visual perception. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
-      {}
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/zLiw4niFeO4?autoplay=1&mute=1&loop=1&controls=0"
+      },
     ]
   },
   {
@@ -225,6 +228,16 @@ var projects = [
     "description": "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {}
+    ]
+  },
+  {
+    "name": "2D Collisions optimization",
+    "description": "2D spatial collisions algorithms optimizations. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+    "media": [
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/ct6aNfJD3pY?autoplay=1&mute=1&loop=1&controls=0"
+      },
     ]
   },
   {
