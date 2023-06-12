@@ -14,9 +14,15 @@ function createProject(id, projectData) {
   projectNode.querySelectorAll(".j-project-desc")[0].innerHTML = projectData.description;
   const projMediaNode = projectNode.querySelectorAll(".j-project-media")[0];
 
-  // Pick one of the following two options and comment the other out.
-  addFirstMediaNode(projectData.media, projMediaNode);
-  // addMediaNodesAsCarousel(projectData.media, projMediaNode);
+  // Add media nodes as single node or carousel.
+  const mediaDatas = projectData.media;
+  if (mediaDatas.length == 0) {
+    console.warn("Found no media data for project: " + projectData.name);
+  } else if (mediaDatas.length == 1) {
+    addFirstMediaNode(projectData.media, projMediaNode);
+  } else { // mediaDatas.length > 1
+    addMediaNodesAsCarousel(projectData.media, projMediaNode);
+  }
 
   // Add project to the container.
   document.getElementById("projects-container").appendChild(projectNode);

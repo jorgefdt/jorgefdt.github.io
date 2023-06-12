@@ -209,6 +209,19 @@
     <img src="projects/sensor-devices-screen.png" class="j-source"></img>
   </template>
 
+  <template id="carusel-media-template">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+      uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000;">
+      <ul class="uk-slideshow-items"></ul>
+
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#"
+        uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next
+        uk-slideshow-item="next"></a>
+      <ul class="uk-slideshow-nav uk-dotnav  uk-flex-center uk-margin "></ul>
+    </div>
+  </template>
+
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
