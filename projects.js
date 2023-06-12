@@ -25,6 +25,14 @@ var projects = [
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1&controls=0"
       },
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/JRhTse4jD-M?autoplay=1&mute=1&loop=1&controls=0"
+      },
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/aEiKhg_Zjys?autoplay=1&mute=1&loop=1&controls=0"
+      },
     ]
   },
   {
@@ -147,6 +155,16 @@ var projects = [
     ]
   },
   {
+    "name": "Human Eyeball",
+    "description": "Prototype exploring human-like movements. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
+    "media": [
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/4he5AFvR_qk?autoplay=1&mute=1&loop=1&controls=0"
+      },
+    ]
+  },
+  {
     "name": "Walkers",
     "description": "Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs, simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
     "media": [
@@ -200,13 +218,20 @@ var projects = [
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/zLiw4niFeO4?autoplay=1&mute=1&loop=1&controls=0"
       },
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/jlzkCr1AXH0?autoplay=1&mute=1&loop=1&controls=0"
+      },
     ]
   },
   {
     "name": "FFT sound analysis visualization",
     "description": "Sound processing, FFT, frequency filtering, and visualization. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> framework.",
     "media": [
-      {}
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/t9GDNNGlqLo?autoplay=1&mute=1&loop=1&controls=0"
+      },
     ]
   },
   {
