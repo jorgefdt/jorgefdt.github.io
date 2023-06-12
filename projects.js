@@ -19,8 +19,12 @@ var projects = [
       },
       {
         "type": "image",
-        "url": "projects/tooling.png"
-      },     
+        "url": "projects/tooling/tooling.png"
+      },
+      {
+        "type": "video",
+        "url": "./projects/double-scara-robot/2scara-random.MOV"
+      }
     ]
   },
   {
@@ -29,7 +33,7 @@ var projects = [
     "media": [
       {
         "type": "video",
-        "url": "./projects/pentagon-double-scara-robot/2scara-random.MOV"
+        "url": "./projects/double-scara-robot/2scara-random.MOV"
       }
     ]
   },
@@ -39,7 +43,7 @@ var projects = [
     "media": [
       {
         "type": "image",
-        "url": "projects/sensor-devices-screen.png"
+        "url": "projects/sensors-and-tracking/sensor-devices-screen.png"
       }
     ]
   },
@@ -49,7 +53,7 @@ var projects = [
     "media": [
       {
         "type": "image",
-        "url": "projects/tooling.png"
+        "url": "projects/tooling/tooling.png"
       }
     ]
   },
