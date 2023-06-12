@@ -58,6 +58,16 @@ var projects = [
     ]
   },
   {
+    "name": "Balance Lab",
+    "description": "Simulation and test bench designed to try different algorithms and strategies to balance inverted pendulums. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
+    "media": [
+      {
+        "type": "video",
+        "url": "./projects/balance-lab/balance-lab.mov"
+      },
+    ]
+  },
+  {
     "name": "Sensors/hand tracking",
     "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).|",
     "media": [
@@ -147,13 +157,13 @@ var projects = [
       },
     ]
   },
-  {
-    "name": "HCI",
-    "description": "Experiments in economic (processing wise) emotional expression using visuals and sounds. Sound and face gestures libraries.",
-    "media": [
-      {}
-    ]
-  },
+  // {
+  //   "name": "HCI",
+  //   "description": "Experiments in economic (processing wise) emotional expression using visuals and sounds. Sound and face gestures libraries.",
+  //   "media": [
+  //     {}
+  //   ]
+  // },
   {
     "name": "Human Eyeball",
     "description": "Prototype exploring human-like movements. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
@@ -238,16 +248,19 @@ var projects = [
     "name": "Pool physics 2d & test bench",
     "description": "Pool game dynamics, visualization, and virtual experimentation test bench.",
     "media": [
-      {}
+      {
+        "type": "video",
+        "url": "./projects/pool-lab/pool-lab_480p.mov"
+      },
     ]
   },
-  {
-    "name": "Image processing primitives",
-    "description": "Simple real-time image processing primitives.",
-    "media": [
-      {}
-    ]
-  },
+  // {
+  //   "name": "Image processing primitives",
+  //   "description": "Simple real-time image processing primitives.",
+  //   "media": [
+  //     {}
+  //   ]
+  // },
   {
     "name": "Wind dynamics simu",
     "description": "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
@@ -272,7 +285,10 @@ var projects = [
     "name": "Warp",
     "description": "Ditto.",
     "media": [
-      {}
+      {
+        "type": "video",
+        "url": "./projects/warp/warp.mov"
+      },
     ]
   }
 ];
