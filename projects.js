@@ -186,7 +186,10 @@ var projects = [
     "name": "Physics engine 2D",
     "description": "2D physics engine implementation and demo using <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
-      {}
+      {
+        "type": "video",
+        "url": "./projects/physics-engine/physics-engine-v0.001.mp4"
+      },
     ]
   },
   {
