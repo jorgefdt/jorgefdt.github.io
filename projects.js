@@ -78,7 +78,30 @@ var projects = [
     "name": "3D scanner",
     "description": "Iterations of my room 3D scanner.",
     "media": [
-      {}
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_0904.jpg"
+      },
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_1082.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_1085.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_1396.JPG"
+      },
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_2441.png"
+      },
+      {
+        "type": "image",
+        "url": "projects/3d-scanners/IMG_9161.png"
+      },
     ]
   },
   {
