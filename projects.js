@@ -5,7 +5,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1"
+        "url": "https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1&controls=0"
       }
     ]
   },
@@ -15,16 +15,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1"
+        "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1&controls=0"
       },
-      {
-        "type": "image",
-        "url": "projects/tooling/tooling.png"
-      },
-      {
-        "type": "video",
-        "url": "./projects/double-scara-robot/2scara-random.MOV"
-      }
     ]
   },
   {
@@ -34,7 +26,19 @@ var projects = [
       {
         "type": "video",
         "url": "./projects/double-scara-robot/2scara-random.MOV"
-      }
+      },
+      {
+        "type": "image",
+        "url": "./projects/double-scara-robot/IMG_1392.JPG"
+      },
+      {
+        "type": "image",
+        "url": "./projects/double-scara-robot/2scara-singularities.PNG"
+      },
+      {
+        "type": "image",
+        "url": "./projects/double-scara-robot/IMG_1380.PNG"
+      },
     ]
   },
   {
