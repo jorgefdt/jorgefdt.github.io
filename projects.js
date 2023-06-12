@@ -252,7 +252,10 @@ var projects = [
     "name": "Wind dynamics simu",
     "description": "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
-      {}
+      {
+        "type": "video",
+        "url": "./projects/wind-dynamics/RPReplay_Final1686538985.mov"
+      },
     ]
   },
   {
