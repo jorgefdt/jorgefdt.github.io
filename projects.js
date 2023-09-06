@@ -63,15 +63,15 @@ var projects = [
     "media": [
       {
         "type": "image",
-        "url": "./projects/balance-lab/page-pendulum.jpeg"
+        "url": "./projects/balance-lab/page-pendulum.png"
       },
       {
         "type": "image",
-        "url": "./projects/balance-lab/page-ramp.jpeg"
+        "url": "./projects/balance-lab/page-ramp.png"
       },
       {
         "type": "image",
-        "url": "./projects/balance-lab/page-leg.jpeg"
+        "url": "./projects/balance-lab/page-leg.png"
       },
       
       {
