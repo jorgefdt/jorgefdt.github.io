@@ -62,6 +62,19 @@ var projects = [
     "description": "Simulation and test bench designed to try different algorithms and strategies to balance inverted pendulums. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
+        "type": "image",
+        "url": "./projects/balance-lab/page-pendulum.jpeg"
+      },
+      {
+        "type": "image",
+        "url": "./projects/balance-lab/page-ramp.jpeg"
+      },
+      {
+        "type": "image",
+        "url": "./projects/balance-lab/page-leg.jpeg"
+      },
+      
+      {
         "type": "video",
         "url": "./projects/balance-lab/balance-lab.mov"
       },
