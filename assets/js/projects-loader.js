@@ -114,6 +114,13 @@ function createMediaNode(mediaData) {
       ns.setAttribute("src", mediaData.url);
       mediaNode = n;
     }
+    
+    // Setup link
+    var nsl = n.querySelectorAll(".j-source-link")[0];
+    if (nsl) {
+      nsl.setAttribute("href", mediaData.url);
+      //nsl.setAttribute("onclick", "window.open('" + mediaData.url + "',  'newwindow', 'height=100%'); return false;");
+    }
   }
 
   return mediaNode;

@@ -83,6 +83,7 @@
 .j-project img {
   width: 100% !important;
   height: auto !important;
+  
   border: none;
 }
 
@@ -107,4 +108,7 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.j-source-link {
 }
