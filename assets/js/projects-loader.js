@@ -44,14 +44,17 @@ function addFirstMediaNode(mediaDatas, projMediaNode) {
 
 // Creates DOM node for each media data and add them to a carousel in projectNode.
 function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
+  //const carouselItemsClassname = ".uk-slider-items";
+  const carouselItemsClassname = ".uk-slideshow-items";
+  
   const carouselNode = cloneTemplate("carusel-media-template");
   if (!carouselNode) {
     console.warn("Could not find carousel at '#carusel-media-template'");
     return;
   }
-  var ulNode = carouselNode.querySelectorAll(".uk-slideshow-items")[0];
+  var ulNode = carouselNode.querySelectorAll(carouselItemsClassname)[0];
   if (!ulNode) {
-    console.warn("Could not find ulNode at '.uk-slideshow-items'");
+    console.warn("Could not find ulNode at " + carouselItemsClassname);
     return;
   }
 
@@ -69,30 +72,6 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
 
   // Add carousel to media node.
   projMediaNode.appendChild(carouselNode);
-
-  /*
-      <ul class="uk-slideshow-items">
-
-        <li>
-          <img src="projects/tooling.png" alt="" uk-cover>
-          <div class="uk-position-bottom uk-text-center">
-            <h3 class="uk-margin-remove">Overlay Bottom</h3>
-            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </li>
-        <li>
-          <img src="projects/sensor-devices-screen.png" alt="" uk-cover>
-        </li>
-        <li>
-          <iframe src="https://www.youtube.com/embed/mde0Y6brTmM" allow="fullscreen" uk-cover></iframe>
-        </li>
-        <li>
-          <video autoplay loop muted playsinline uk-cover
-            src="./projects/pentagon-double-scara-robot/2scara-random.MOV">
-          </video>
-        </li>
-
-  */
 }
 
 // Creates DOM node to display mediaData. Returns null if error.
@@ -105,6 +84,8 @@ function createMediaNode(mediaData) {
     mediaTemplate = "video-media-template";
   } else if (mediaData.type == "image") {
     mediaTemplate = "img-media-template";
+  } else if (mediaData.type == "image-tall") {
+    mediaTemplate = "img-tall-media-template";
   }
 
   if (mediaTemplate) {
@@ -115,12 +96,11 @@ function createMediaNode(mediaData) {
       mediaNode = n;
     }
     
-    // Setup link
-    var nsl = n.querySelectorAll(".j-source-link")[0];
-    if (nsl) {
-      nsl.setAttribute("href", mediaData.url);
-      //nsl.setAttribute("onclick", "window.open('" + mediaData.url + "',  'newwindow', 'height=100%'); return false;");
-    }
+    // // Setup link
+    // var nsl = n.querySelectorAll(".j-source-link")[0];
+    // if (nsl) {
+    //   nsl.setAttribute("href", mediaData.url);
+    // }
   }
 
   return mediaNode;

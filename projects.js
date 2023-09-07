@@ -57,29 +57,28 @@ var projects = [
       },
     ]
   },
-  {
-    "name": "Balance Lab",
-    "description": "Simulation and test bench designed to try different algorithms and strategies to balance inverted pendulums. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
-    "media": [
-      {
-        "type": "image",
-        "url": "./projects/balance-lab/page-pendulum.png"
-      },
-      {
-        "type": "image",
-        "url": "./projects/balance-lab/page-ramp.png"
-      },
-      {
-        "type": "image",
-        "url": "./projects/balance-lab/page-leg.png"
-      },
-      
-      {
-        "type": "video",
-        "url": "./projects/balance-lab/balance-lab.mov"
-      },
-    ]
-  },
+  // {
+  //   "name": "Balance Lab",
+  //   "description": "Simulation and test bench designed to try different algorithms and strategies to balance inverted pendulums. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
+  //   "media": [
+  //     {
+  //       "type": "image",
+  //       "url": "./projects/balance-lab/page-pendulum-tall.jpg"
+  //     },
+  //     {
+  //       "type": "image",
+  //       "url": "./projects/balance-lab/page-ramp-tall.jpg"
+  //     },
+  //     {
+  //       "type": "image",
+  //       "url": "./projects/balance-lab/page-leg-tall.jpg"
+  //     },
+  //     {
+  //       "type": "video",
+  //       "url": "./projects/balance-lab/balance-lab.mov"
+  //     },
+  //   ]
+  // },
   {
     "name": "Sensors/hand tracking",
     "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).|",

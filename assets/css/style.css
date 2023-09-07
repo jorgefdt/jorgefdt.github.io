@@ -75,17 +75,22 @@
 }
 
 .j-project > .j-project-media {
-  width: 100%;
-  height: auto;
+/*  width: 100%;
+  height: auto;*/
+  object-fit: contain;
 }
 
 /* Style project images. */
 .j-project img {
   width: 100% !important;
   height: auto !important;
-  
   border: none;
 }
+
+/*.j-project img.tall {
+  object-fit: contain;
+  border: none;
+}*/
 
 /* Style project videos. */
 .j-project video {
