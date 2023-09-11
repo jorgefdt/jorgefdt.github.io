@@ -1,5 +1,28 @@
 var projects = [
   {
+    "name": "Balance Lab",
+    "description": "Simulation and test bench designed to try different algorithms and strategies to balance physical bodies and mechanisms, including inverted pendulums, and eventually bipedal walking robots. This lab provides tools to add disturbances, stability metrics, charts, etc. Runs on browsers, including mobile devices. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
+    "media": [
+      {
+        "type": "image",
+        "url": "./projects/balance-lab/page-pendulum-tall.jpg",
+        "height": "650px",
+      },
+      {
+        "type": "image",
+        "url": "./projects/balance-lab/page-ramp-tall.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./projects/balance-lab/page-leg-tall.jpg"
+      },
+      // {
+      //   "type": "video",
+      //   "url": "./projects/balance-lab/balance-lab.mov"
+      // },
+    ]
+  },
+  {
     "name": "Inverted Pendulum",
     "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.|",
     "media": [
@@ -61,28 +84,6 @@ var projects = [
       },
     ]
   },
-  // {
-  //   "name": "Balance Lab",
-  //   "description": "Simulation and test bench designed to try different algorithms and strategies to balance inverted pendulums. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
-  //   "media": [
-  //     {
-  //       "type": "image",
-  //       "url": "./projects/balance-lab/page-pendulum-tall.jpg"
-  //     },
-  //     {
-  //       "type": "image",
-  //       "url": "./projects/balance-lab/page-ramp-tall.jpg"
-  //     },
-  //     {
-  //       "type": "image",
-  //       "url": "./projects/balance-lab/page-leg-tall.jpg"
-  //     },
-  //     {
-  //       "type": "video",
-  //       "url": "./projects/balance-lab/balance-lab.mov"
-  //     },
-  //   ]
-  // },
   {
     "name": "Sensors/hand tracking",
     "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).|",
