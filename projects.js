@@ -40,8 +40,8 @@ var projects = [
     "description": "Pentagon/double scara robot analysis/sims and design. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/double-scara-robot/2scara-random.MOV"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?autoplay=1&mute=1&loop=1&controls=0"
       },
       {
         "type": "image",
@@ -104,8 +104,8 @@ var projects = [
     "description": "Interesting optimization algorithm visualization. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/cubes-city/RPReplay_Final1686161293.mov"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/oKMlH6lvHQg?autoplay=1&mute=1&loop=1&controls=0"
       }
     ]
   },
@@ -217,8 +217,8 @@ var projects = [
     "description": "IMU (Inertial Measuring Unit) Experiments on mobile device. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/j-horizon/RPReplay_Final1635892005.mov"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   },
@@ -227,8 +227,8 @@ var projects = [
     "description": "2D physics engine implementation and demo using <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/physics-engine/physics-engine-v0.001.mp4"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/LiMf_OiN0kY?autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   },
@@ -261,8 +261,8 @@ var projects = [
     "description": "Pool game dynamics, visualization, and virtual experimentation test bench.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/pool-lab/pool-lab_480p.mov"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/0PBtFqUibhg?autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   },
@@ -278,8 +278,8 @@ var projects = [
     "description": "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/wind-dynamics/RPReplay_Final1686538985.mov"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/VnXYapCbXZ0?autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   },
@@ -298,8 +298,8 @@ var projects = [
     "description": "Ditto.",
     "media": [
       {
-        "type": "video",
-        "url": "./projects/warp/warp.mov"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/dh6up4FICH4?autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   }
