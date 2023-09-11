@@ -36,6 +36,11 @@ function addFirstMediaNode(mediaDatas, projMediaNode) {
     const node = createMediaNode(mediaData);
     if (node) {
       projMediaNode.appendChild(node);
+      
+      // Add custom media height for individual media (not carrousel).
+      if (mediaData.height) {
+        projMediaNode.style.height = mediaData.height;
+      }
     } else {
       console.warn("Could not create node for mediaData: " + mediaData);
     }
@@ -65,6 +70,11 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
       var liNode = document.createElement("li");
       ulNode.appendChild(liNode);
       liNode.appendChild(node);
+
+      // Add custom media height for individual media (not carrousel).
+      if (mediaData.height) {
+        ulNode.style.height = mediaData.height;
+      }      
     } else {
       console.warn("Could not create node for mediaData: " + mediaData);
     }
@@ -94,6 +104,11 @@ function createMediaNode(mediaData) {
     if (ns) {
       ns.setAttribute("src", mediaData.url);
       mediaNode = n;
+
+      // Add custom media height.
+      if (mediaData.height){
+        ns.style.height = mediaData.height ;
+      }
     }
     
     // // Setup link

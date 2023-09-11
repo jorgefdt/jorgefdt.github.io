@@ -27,11 +27,13 @@ var projects = [
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/JRhTse4jD-M?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/JRhTse4jD-M?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "800px",
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/aEiKhg_Zjys?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/aEiKhg_Zjys?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "800px",
       },
     ]
   },
@@ -41,7 +43,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "300px",
       },
       {
         "type": "image",
@@ -49,7 +52,8 @@ var projects = [
       },
       {
         "type": "image",
-        "url": "./projects/double-scara-robot/2scara-singularities.PNG"
+        "url": "./projects/double-scara-robot/2scara-singularities.PNG",
+        "height": "300px",
       },
       {
         "type": "image",
@@ -105,7 +109,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/oKMlH6lvHQg?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/oKMlH6lvHQg?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "800px",
       }
     ]
   },
@@ -123,7 +128,8 @@ var projects = [
       },
       {
         "type": "image",
-        "url": "projects/hal-9001/IMG_0023.png"
+        "url": "projects/hal-9001/IMG_0023.png",
+        "height": "300px",
       },
       {
         "type": "image",
@@ -165,7 +171,8 @@ var projects = [
       },
       {
         "type": "image",
-        "url": "projects/3d-scanners/IMG_9161.png"
+        "url": "projects/3d-scanners/IMG_9161.png",
+        "height": "450px",
       },
     ]
   },
@@ -182,7 +189,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/4he5AFvR_qk?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/4he5AFvR_qk?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "600px",
       },
     ]
   },
@@ -192,7 +200,8 @@ var projects = [
     "media": [
       {
         "type": "image",
-        "url": "projects/walkers/IMG_1122.JPG"
+        "url": "projects/walkers/IMG_1122.JPG",
+        "height": "400px",
       },
       {
         "type": "image",
@@ -218,7 +227,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "600px",
       },
     ]
   },
@@ -228,7 +238,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/LiMf_OiN0kY?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/LiMf_OiN0kY?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
     ]
   },
@@ -238,11 +249,13 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/zLiw4niFeO4?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/zLiw4niFeO4?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/jlzkCr1AXH0?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/jlzkCr1AXH0?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
     ]
   },
@@ -252,7 +265,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/t9GDNNGlqLo?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/t9GDNNGlqLo?autoplay=1&mute=1&loop=1&controls=0",
       },
     ]
   },
@@ -262,7 +275,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/0PBtFqUibhg?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/0PBtFqUibhg?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
     ]
   },
@@ -279,7 +293,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/VnXYapCbXZ0?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/VnXYapCbXZ0?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
     ]
   },
@@ -299,7 +314,8 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/dh6up4FICH4?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/dh6up4FICH4?autoplay=1&mute=1&loop=1&controls=0",
+        "height": "650px",
       },
     ]
   }
