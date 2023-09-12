@@ -24,6 +24,21 @@ var projects = [
     ]
   },
   {
+    "name": "Energency Box with metrics",
+    "description": "After some years without 3D printing I wanted a small project to warm up.",
+    "media": [
+      {
+        "type": "image",
+        "url": "./projects/e-box/IMG_6690.jpeg",
+        "height": "300px"
+      },
+      {
+        "type": "image",
+        "url": "./projects/e-box/IMG_6614.jpeg",
+      },
+    ]
+  },
+  {
     "name": "Inverted Pendulum",
     "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.|",
     "media": [
