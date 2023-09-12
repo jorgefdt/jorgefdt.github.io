@@ -1,4 +1,22 @@
-var projects = [
+var testProjects = [
+  {
+    "name": "test, only one YT video",
+    "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.|",
+    "media": [
+      // {
+      //   "type": "image",
+      //   "url": "./projects/balance-lab/page-pendulum-tall.jpg",
+      //   "height": "650px",
+      // },    
+      {
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?playlist=dWmqm_FYc1Q&autoplay=1&mute=1&loop=1&controls=0",
+        "height": "600px",
+      },
+    ]
+  },
+];
+var allProjects = [
   {
     "name": "Balance Lab",
     "description": "Simulation and test bench designed to try different algorithms and strategies to balance physical bodies and mechanisms, including inverted pendulums, and eventually bipedal walking robots. This lab provides tools to add disturbances, stability metrics, charts, etc. Runs on browsers, including mobile devices. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
@@ -18,7 +36,7 @@ var projects = [
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/fjnPDdvWm_s?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/fjnPDdvWm_s?playlist=fjnPDdvWm_s&autoplay=1&mute=1&loop=1&controls=0",
         "height": "700px",
       }, //
     ]
@@ -40,11 +58,11 @@ var projects = [
   },
   {
     "name": "Inverted Pendulum",
-    "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.|",
+    "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/mde0Y6brTmM?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/mde0Y6brTmM?playlist=mde0Y6brTmM&autoplay=1&mute=1&loop=1&controls=0"
       },
       {
         "type": "image",
@@ -62,16 +80,16 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/5hC8sITqggg?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/5hC8sITqggg?playlist=5hC8sITqggg&autoplay=1&mute=1&loop=1&controls=0"
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/JRhTse4jD-M?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/JRhTse4jD-M?playlist=JRhTse4jD-M&autoplay=1&mute=1&loop=1&controls=0",
         "height": "800px",
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/aEiKhg_Zjys?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/aEiKhg_Zjys?playlist=aEiKhg_Zjys&autoplay=1&mute=1&loop=1&controls=0",
         "height": "800px",
       },
     ]
@@ -82,7 +100,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?playlist=5lmzWd7J-Dw&autoplay=1&mute=1&loop=1&controls=0",
         "height": "300px",
       },
       {
@@ -126,7 +144,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/oKMlH6lvHQg?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/oKMlH6lvHQg?playlist=oKMlH6lvHQg&autoplay=1&mute=1&loop=1&controls=0",
         "height": "800px",
       }
     ]
@@ -206,7 +224,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/4he5AFvR_qk?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/4he5AFvR_qk?playlist=4he5AFvR_qk&autoplay=1&mute=1&loop=1&controls=0",
         "height": "600px",
       },
     ]
@@ -244,7 +262,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?playlist=dWmqm_FYc1Q&autoplay=1&mute=1&loop=1&controls=0",
         "height": "600px",
       },
     ]
@@ -255,7 +273,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/LiMf_OiN0kY?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/LiMf_OiN0kY?playlist=LiMf_OiN0kY&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
     ]
@@ -266,12 +284,12 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/zLiw4niFeO4?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/zLiw4niFeO4?playlist=zLiw4niFeO4&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/jlzkCr1AXH0?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/jlzkCr1AXH0?playlist=jlzkCr1AXH0&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
     ]
@@ -282,7 +300,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/t9GDNNGlqLo?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/t9GDNNGlqLo?playlist=t9GDNNGlqLo&autoplay=1&mute=1&loop=1&controls=0",
       },
     ]
   },
@@ -292,7 +310,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/0PBtFqUibhg?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/0PBtFqUibhg?playlist=0PBtFqUibhg&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
     ]
@@ -310,7 +328,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/VnXYapCbXZ0?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/VnXYapCbXZ0?playlist=VnXYapCbXZ0&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
     ]
@@ -321,7 +339,7 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/ct6aNfJD3pY?autoplay=1&mute=1&loop=1&controls=0"
+        "url": "https://www.youtube.com/embed/ct6aNfJD3pY?playlist=ct6aNfJD3pY&autoplay=1&mute=1&loop=1&controls=0"
       },
     ]
   },
@@ -331,10 +349,13 @@ var projects = [
     "media": [
       {
         "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/dh6up4FICH4?autoplay=1&mute=1&loop=1&controls=0",
+        "url": "https://www.youtube.com/embed/dh6up4FICH4?playlist=dh6up4FICH4&autoplay=1&mute=1&loop=1&controls=0",
         "height": "650px",
       },
     ]
   }
 ];
 
+var projects = 
+  // testProjects;
+  allProjects;
