@@ -1,5 +1,9 @@
 function loadProjects() {
   projects.forEach((project, i) => createProject(i, project));
+  // let i0 = 0;
+  // for (let i = i0; i < i0 + 3; i++) {
+  //   createProject(i, projects[i]);
+  // }
 }
 
 loadProjects();
@@ -8,6 +12,11 @@ loadProjects();
 // Assume the template structure is valid.
 function createProject(id, projectData) {
   var projectNode = cloneTemplate("project-template");
+
+  // Inflate multiline strings to one string.
+  if (Array.isArray(projectData.description)) {
+    projectData.description = projectData.description.join('<br/>\n');
+  }
 
   // Configure project from project data.
   projectNode.querySelectorAll(".j-project-title")[0].innerHTML = projectData.name;
@@ -38,9 +47,7 @@ function addFirstMediaNode(mediaDatas, projMediaNode) {
       projMediaNode.appendChild(node);
       
       // Add custom media height for individual media (not carrousel).
-      if (mediaData.height) {
-        projMediaNode.style.height = mediaData.height;
-      }
+      customizeNodeHeight(projMediaNode, mediaData);
     } else {
       console.warn("Could not create node for mediaData: " + mediaData);
     }
@@ -57,11 +64,15 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
     console.warn("Could not find carousel at '#carusel-media-template'");
     return;
   }
+
   var ulNode = carouselNode.querySelectorAll(carouselItemsClassname)[0];
   if (!ulNode) {
     console.warn("Could not find ulNode at " + carouselItemsClassname);
     return;
   }
+      
+  // Add carousel to media node.
+  projMediaNode.appendChild(carouselNode);
 
   // Add each media node as a page (an <li>) in the carousel.
   mediaDatas.forEach(mediaData => {
@@ -71,17 +82,12 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
       ulNode.appendChild(liNode);
       liNode.appendChild(node);
 
-      // Add custom media height for individual media (not carrousel).
-      if (mediaData.height) {
-        ulNode.style.height = mediaData.height;
-      }      
+      // Add custom media height for carrousel media.
+      customizeNodeHeight(ulNode, mediaData);
     } else {
       console.warn("Could not create node for mediaData: " + mediaData);
     }
   });
-
-  // Add carousel to media node.
-  projMediaNode.appendChild(carouselNode);
 }
 
 // Creates DOM node to display mediaData. Returns null if error.
@@ -106,9 +112,7 @@ function createMediaNode(mediaData) {
       mediaNode = n;
 
       // Add custom media height.
-      if (mediaData.height){
-        ns.style.height = mediaData.height ;
-      }
+      customizeNodeHeight(ns, mediaData);
     }
     
     // // Setup link
@@ -119,6 +123,16 @@ function createMediaNode(mediaData) {
   }
 
   return mediaNode;
+}
+
+// If possible, modifies node height dinamically as specified by mediaData.
+function customizeNodeHeight(node, mediaData) {
+  if (mediaData.whRatio) {
+    // Compute height from the configured project width and the requested w/r ratio.
+    node.style.height = (siteConfig.projectWidth / mediaData.whRatio).toFixed() + "px";;
+  } else if (mediaData.height) {
+    node.style.height = mediaData.height;
+  }
 }
 
 // Creates a clone of the template with the specified id and returns it.

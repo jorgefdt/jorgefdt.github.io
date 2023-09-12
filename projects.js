@@ -1,30 +1,20 @@
-var testProjects = [
-  {
-    "name": "test, only one YT video",
-    "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.|",
-    "media": [
-      // {
-      //   "type": "image",
-      //   "url": "./projects/balance-lab/page-pendulum-tall.jpg",
-      //   "height": "650px",
-      // },    
-      {
-        "type": "videoIframe",
-        "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?playlist=dWmqm_FYc1Q&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "600px",
-      },
-    ]
-  },
-];
-var allProjects = [
+const siteConfig = {
+  projectWidth: 400,
+};
+const projects = [
   {
     "name": "Balance Lab",
-    "description": "Simulation and test bench designed to try different algorithms and strategies to balance physical bodies and mechanisms, including inverted pendulums, and eventually bipedal walking robots. This lab provides tools to add disturbances, stability metrics, charts, etc. Runs on browsers, including mobile devices. <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
+    "description": [
+      "Simulation and test bench designed to try different algorithms and strategies to balance physical bodies and mechanisms, including inverted pendulums, and eventually bipedal walking robots.",
+      "This lab provides tools to add disturbances, stability metrics, charts, etc. It runs on browsers, including mobile devices.",
+      "This is part of a long term project aiming to produce dynamically balanced bipedal robots.",
+      "Built using <span class=\"name\">matter-js</span>, <span class=\"name\">chart.js</span>, <span class=\"name\">Bulma</span> on <span class=\"name\">iOS</span>.",
+    ],
     "media": [
       {
         "type": "image",
         "url": "./projects/balance-lab/page-pendulum-tall.jpg",
-        "height": "650px",
+        "whRatio": 0.58,
       },
       {
         "type": "image",
@@ -37,8 +27,8 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/fjnPDdvWm_s?playlist=fjnPDdvWm_s&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "700px",
-      }, //
+        "whRatio": 0.57,
+      },
     ]
   },
   {
@@ -48,7 +38,7 @@ var allProjects = [
       {
         "type": "image",
         "url": "./projects/e-box/IMG_6690.jpeg",
-        "height": "300px"
+        "whRatio": 1.4,
       },
       {
         "type": "image",
@@ -57,8 +47,11 @@ var allProjects = [
     ]
   },
   {
-    "name": "Inverted Pendulum",
-    "description": "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
+    "name": "Inverted Pendulum and balancers",
+    "description": [
+      "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
+      "This is part of a long term project aiming to produce dynamically balanced bipedal robots.",
+    ],
     "media": [
       {
         "type": "videoIframe",
@@ -85,12 +78,12 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/JRhTse4jD-M?playlist=JRhTse4jD-M&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "800px",
+        "whRatio": 0.50,
       },
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/aEiKhg_Zjys?playlist=aEiKhg_Zjys&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "800px",
+        "whRatio": 0.50,
       },
     ]
   },
@@ -101,7 +94,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/5lmzWd7J-Dw?playlist=5lmzWd7J-Dw&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "300px",
+        "whRatio": 1.33,
       },
       {
         "type": "image",
@@ -110,7 +103,7 @@ var allProjects = [
       {
         "type": "image",
         "url": "./projects/double-scara-robot/2scara-singularities.PNG",
-        "height": "300px",
+        "whRatio": 1.33,
       },
       {
         "type": "image",
@@ -145,7 +138,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/oKMlH6lvHQg?playlist=oKMlH6lvHQg&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "800px",
+        "whRatio": 0.6,
       }
     ]
   },
@@ -164,7 +157,7 @@ var allProjects = [
       {
         "type": "image",
         "url": "projects/hal-9001/IMG_0023.png",
-        "height": "300px",
+        "whRatio": 1.33,
       },
       {
         "type": "image",
@@ -186,28 +179,25 @@ var allProjects = [
     "media": [
       {
         "type": "image",
-        "url": "projects/3d-scanners/IMG_0904.jpg"
+        "url": "projects/3d-scanners/IMG_0904.jpg",
       },
       {
         "type": "image",
-        "url": "projects/3d-scanners/IMG_1082.JPG"
+        "url": "projects/3d-scanners/IMG_1085.JPG",
       },
       {
         "type": "image",
-        "url": "projects/3d-scanners/IMG_1085.JPG"
+        "url": "projects/3d-scanners/IMG_1396.JPG",
       },
       {
         "type": "image",
-        "url": "projects/3d-scanners/IMG_1396.JPG"
-      },
-      {
-        "type": "image",
-        "url": "projects/3d-scanners/IMG_2441.png"
+        "url": "projects/3d-scanners/IMG_2441.png",
+        "whRatio": 0.89,
       },
       {
         "type": "image",
         "url": "projects/3d-scanners/IMG_9161.png",
-        "height": "450px",
+        "whRatio": 0.89,
       },
     ]
   },
@@ -225,7 +215,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/4he5AFvR_qk?playlist=4he5AFvR_qk&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "600px",
+        "whRatio": 0.50,
       },
     ]
   },
@@ -236,23 +226,19 @@ var allProjects = [
       {
         "type": "image",
         "url": "projects/walkers/IMG_1122.JPG",
-        "height": "400px",
+        "whRatio": 1.0,
       },
       {
         "type": "image",
-        "url": "projects/walkers/IMG_1169.JPG"
+        "url": "projects/walkers/IMG_1394.JPG",
       },
       {
         "type": "image",
-        "url": "projects/walkers/IMG_1394.JPG"
+        "url": "projects/walkers/IMG_1395.JPG",
       },
       {
         "type": "image",
-        "url": "projects/walkers/IMG_1395.JPG"
-      },
-      {
-        "type": "image",
-        "url": "projects/walkers/IMG_9941.jpg"
+        "url": "projects/walkers/IMG_9941.jpg",
       },
     ]
   },
@@ -263,7 +249,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/dWmqm_FYc1Q?playlist=dWmqm_FYc1Q&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "600px",
+        "whRatio": 0.50,
       },
     ]
   },
@@ -274,7 +260,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/LiMf_OiN0kY?playlist=LiMf_OiN0kY&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.50,
       },
     ]
   },
@@ -285,12 +271,12 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/zLiw4niFeO4?playlist=zLiw4niFeO4&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.52,
       },
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/jlzkCr1AXH0?playlist=jlzkCr1AXH0&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.52,
       },
     ]
   },
@@ -311,7 +297,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/0PBtFqUibhg?playlist=0PBtFqUibhg&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.58,
       },
     ]
   },
@@ -329,7 +315,7 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/VnXYapCbXZ0?playlist=VnXYapCbXZ0&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.58,
       },
     ]
   },
@@ -350,12 +336,8 @@ var allProjects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/dh6up4FICH4?playlist=dh6up4FICH4&autoplay=1&mute=1&loop=1&controls=0",
-        "height": "650px",
+        "whRatio": 0.58,
       },
     ]
   }
 ];
-
-var projects = 
-  // testProjects;
-  allProjects;
