@@ -33,7 +33,12 @@ const projects = [
   },
   {
     "name": "Energency Box with metrics",
-    "description": "After some years without 3D printing I wanted a small project to warm up.",
+    "description": [
+      "After some years without 3D printing I wanted a small project to warm up.",
+      "This box functions as a direct plu-n-play with existing power lines in my lab, ready for fast power",
+      "cut on emergencies, a configurable fuse, and load metrics.",
+      "Built using my <span class=\"name\">Prusa MK3S</span> 3d-printer and <span class=\"name\">Shapr3D</span>, as 3D modeling tool.",
+    ],
     "media": [
       {
         "type": "image",
@@ -59,7 +64,8 @@ const projects = [
       },
       {
         "type": "image",
-        "url": "./projects/inverted-pendulum/IMG_1220.JPG"
+        "url": "./projects/inverted-pendulum/IMG_1220.JPG",
+        "whRatio": 1.3,
       },
       {
         "type": "image",
@@ -89,7 +95,10 @@ const projects = [
   },
   {
     "name": "Double-Scara Robot",
-    "description": "Pentagon/double scara robot analysis/sims and design. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
+    "description": [
+      "Pentagon/double scara robot analysis/sims and design.",
+      "Built with <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
+    ],
     "media": [
       {
         "type": "videoIframe",
@@ -106,14 +115,15 @@ const projects = [
         "whRatio": 1.33,
       },
       {
-        "type": "image",
-        "url": "./projects/double-scara-robot/IMG_1380.PNG"
+        "type": "videoIframe",
+        "url": "https://www.youtube.com/embed/R_AIzCTYBNs?playlist=R_AIzCTYBNs&autoplay=1&mute=1&loop=1&controls=0",
+        "overlay": "This is not my project, but an inspiration.",
       },
     ]
   },
   {
-    "name": "Sensors/hand tracking",
-    "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).|",
+    "name": "Sensors/hand tracking/stereoscopic vision experiments",
+    "description": "Sensor devices experimentation and alpha testing (<span class=\"name\">LEAP</span>, <span class=\"name\">MIO</span>, <span class=\"name\">OpenCV</span> AI Kit).",
     "media": [
       {
         "type": "image",
@@ -144,8 +154,11 @@ const projects = [
   },
   {
     "name": "HAL-9001",
-    "description": "<span class=\"name\">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant.",
-    "media": [
+    "description": [
+        "<span class=\"name\">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant (TBD - meant to be <span class=\"name\">Mycroft AI</span>).",
+        "Original size, from the movie blueprints; eBay lens.",
+      ],
+      "media": [
       {
         "type": "image",
         "url": "projects/hal-9001/019C79FF-B31B-453C-BADB-888ABB228BBF.JPG"
@@ -175,7 +188,13 @@ const projects = [
   },
   {
     "name": "3D scanner",
-    "description": "Iterations of my room 3D scanner.",
+    "description": [
+      "Iterations on my design and manufacturing of a room 3D scanner.",
+      "1. Ultrasound/sonar: <tt>[Arduino --(serial) --> computer</tt> (very inprecise).",
+      "2. Tri-laser/line-laser + camera: <tt>[RPi + OpenCV]</tt> (very unstable)",
+      "3. ToF sensor (VL53L1CX - tiny infrared laser): <tt>Arduino --(serial)--> computer.</tt>. Ok but low very resolution.",
+      "4. Computer running <span class=\"name\">Java</span> + <span class=\"name\">Processing</span>.",
+    ],
     "media": [
       {
         "type": "image",
@@ -221,7 +240,10 @@ const projects = [
   },
   {
     "name": "Walkers",
-    "description": "Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs, simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
+    "description": [
+      "Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs, simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
+      "<i>I am almost done - I just need a team of brilliant scientists and engineers, some billion dollars and a several (unbounded) of decades of full dedication.</i> 😐",
+    ],
     "media": [
       {
         "type": "image",
@@ -255,7 +277,7 @@ const projects = [
   },
   {
     "name": "Physics engine 2D",
-    "description": "2D physics engine implementation and demo using <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+    "description": "My own 2D physics engine implementation and demo using <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
         "type": "videoIframe",
@@ -292,7 +314,10 @@ const projects = [
   },
   {
     "name": "Pool physics 2d & test bench",
-    "description": "Pool game dynamics, visualization, and virtual experimentation test bench.",
+    "description": [
+      "Pool game dynamics, visualization, and virtual experimentation test bench (e.g., <i>'How thin should I hit a ball to displace it in an angle of 85 degrees?'</i>).",
+      "This is what an engineer does when s/he sucks at playing pool in real life."
+    ],
     "media": [
       {
         "type": "videoIframe",
@@ -310,7 +335,10 @@ const projects = [
   // },
   {
     "name": "Wind dynamics simu",
-    "description": "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+    "description": [
+      "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+      "Includes primitives to define flow fields and whirlwinds."
+    ],
     "media": [
       {
         "type": "videoIframe",
@@ -321,7 +349,10 @@ const projects = [
   },
   {
     "name": "2D Collisions optimization",
-    "description": "2D spatial collisions algorithms optimizations. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+    "description": [
+      "2D spatial collisions algorithms optimizations. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
+      "Experiments..., experiments..., experiments!",
+    ],
     "media": [
       {
         "type": "videoIframe",
@@ -331,7 +362,9 @@ const projects = [
   },
   {
     "name": "Warp",
-    "description": "Ditto.",
+    "description": [
+      "<i>A long time ago in a galaxy far, far away....</i>",
+    ],
     "media": [
       {
         "type": "videoIframe",

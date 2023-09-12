@@ -1,6 +1,6 @@
 function loadProjects() {
   projects.forEach((project, i) => createProject(i, project));
-  // let i0 = 0;
+  // let i0 = 3;
   // for (let i = i0; i < i0 + 3; i++) {
   //   createProject(i, projects[i]);
   // }
@@ -82,6 +82,9 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
       ulNode.appendChild(liNode);
       liNode.appendChild(node);
 
+      // Add overlay.
+      addOverlay(liNode, mediaData);
+
       // Add custom media height for carrousel media.
       customizeNodeHeight(ulNode, mediaData);
     } else {
@@ -132,6 +135,19 @@ function customizeNodeHeight(node, mediaData) {
     node.style.height = (siteConfig.projectWidth / mediaData.whRatio).toFixed() + "px";;
   } else if (mediaData.height) {
     node.style.height = mediaData.height;
+  }
+}
+
+// If possible, adds an overlay as specified by mediaData.
+function addOverlay(node, mediaData) {
+  if (mediaData.overlay) {
+    var overlayNode = document.createElement("div");
+    overlayNode.innerHTML = mediaData.overlay;
+    overlayNode.classList.add("uk-position-center");
+    overlayNode.classList.add("uk-overlay");
+    overlayNode.classList.add("uk-light");
+    overlayNode.style = "color: #ffd700; font-size: 20px; font-weight: 700;";
+    node.appendChild(overlayNode);
   }
 }
 
