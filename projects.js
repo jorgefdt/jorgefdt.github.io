@@ -71,6 +71,11 @@ const projects = [
         "type": "image",
         "url": "./projects/inverted-pendulum/IMG_1711.png"
       },
+      {
+        "type": "image",
+        "url": "./projects/inverted-pendulum/IMG_6692.jpg",
+        "whRatio": 0.7,
+      },
     ]
   },
   {
