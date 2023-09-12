@@ -19,8 +19,7 @@ var projects = [
       {
         "type": "videoIframe",
         "url": "https://www.youtube.com/embed/fjnPDdvWm_s?autoplay=1&mute=1&loop=1&controls=0",
-        //"url": "https://youtube.com/shorts/fjnPDdvWm_s?si=b4gXkXPNMob2_enV",
-        "height": "600px",    
+        "height": "700px",
       }, //
     ]
   },
