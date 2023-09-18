@@ -32,6 +32,25 @@ const projects = [
     ]
   },
   {
+    "name": "Laser Scanner v1",
+    "description": [
+      "Who does not like quickly moving lasers? :)",
+      "This project is inspired in classical galvo-based laser scanners used to drive laser shows. Instead of galvanometers, I'm using cheap, slow, and reliable stepper motors.",
+      "I'm also using IR reflectance sensors to help the homing process, and finally this is all printed using my <span class=\"name\">Prusa MK3S</span> 3d-printer and designed with <span class=\"name\">Shapr3D</span>.",
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "./projects/laser-scanner/front.png",
+        "whRatio": 1.3,
+      },
+      {
+        "type": "image",
+        "url": "./projects/laser-scanner/front-w-lasers.png",
+      },
+    ]
+  },  
+  {
     "name": "Energency Box with metrics",
     "description": [
       "After some years without 3D printing I wanted a small project to warm up.",
