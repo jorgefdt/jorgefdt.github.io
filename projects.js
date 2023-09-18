@@ -3,7 +3,7 @@ const siteConfig = {
 };
 const projects = [
   {
-    "name": "Balance Lab",
+    "name": "Balance Lab (2022-2023)",
     "description": [
       "Simulation and test bench designed to try different algorithms and strategies to balance physical bodies and mechanisms, including inverted pendulums, and eventually bipedal walking robots.",
       "This lab provides tools to add disturbances, stability metrics, charts, etc. It runs on browsers, including mobile devices.",
@@ -32,7 +32,7 @@ const projects = [
     ]
   },
   {
-    "name": "Laser Scanner v1",
+    "name": "Laser Scanner v1 (July 2023)",
     "description": [
       "Who does not like quickly moving lasers? :)",
       "This project is inspired in classical galvo-based laser scanners used to drive laser shows. Instead of galvanometers, I'm using cheap, slow, and reliable stepper motors.",
@@ -51,7 +51,7 @@ const projects = [
     ]
   },  
   {
-    "name": "Energency Box with metrics",
+    "name": "Energency Box with metrics (August 2023)",
     "description": [
       "After some years without 3D printing I wanted a small project to warm up.",
       "This box functions as a direct plu-n-play with existing power lines in my lab, ready for fast power",
@@ -71,7 +71,7 @@ const projects = [
     ]
   },
   {
-    "name": "Inverted Pendulum and balancers",
+    "name": "Inverted Pendulum and balancers (2021-2023)",
     "description": [
       "Different inverted pendulums implementations, self-balancing robot, and simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
       "This is part of a long term project aiming to produce dynamically balanced bipedal robots.",
@@ -98,7 +98,7 @@ const projects = [
     ]
   },
   {
-    "name": "Perlin Noise Fields",
+    "name": "Perlin Noise Fields (2022)",
     "description": "Random fields simulations based on Perlin noise. 3D graphics on <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
@@ -118,7 +118,7 @@ const projects = [
     ]
   },
   {
-    "name": "Double-Scara Robot",
+    "name": "Double-Scara Robot (2022)",
     "description": [
       "Pentagon/double scara robot analysis/sims and design.",
       "Built with <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
@@ -166,7 +166,7 @@ const projects = [
     ]
   },
   {
-    "name": "Cubes-City",
+    "name": "Cubes-City (2022)",
     "description": "Interesting optimization algorithm visualization. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
@@ -177,7 +177,7 @@ const projects = [
     ]
   },
   {
-    "name": "HAL-9001",
+    "name": "HAL-9001 (2020)",
     "description": [
         "<span class=\"name\">2001 Space Odyssey</span> 3D printed HAL-9000 replica with a voice assistant (TBD - meant to be <span class=\"name\">Mycroft AI</span>).",
         "Original size, from the movie blueprints; eBay lens.",
@@ -211,7 +211,7 @@ const projects = [
     ]
   },
   {
-    "name": "3D scanner",
+    "name": "3D scanner (2019)",
     "description": [
       "Iterations on my design and manufacturing of a room 3D scanner.",
       "1. Ultrasound/sonar: <tt>[Arduino --(serial) --> computer</tt> (very inprecise).",
@@ -252,7 +252,7 @@ const projects = [
   //   ]
   // },
   {
-    "name": "Human Eyeball",
+    "name": "Human Eyeball (2020)",
     "description": "Prototype exploring human-like movements. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
@@ -263,7 +263,7 @@ const projects = [
     ]
   },
   {
-    "name": "Walkers",
+    "name": "Walkers (-ongoing)",
     "description": [
       "Iterations toward bipedal locomotion robots. Inverted pendulum, self-balancing robot, quadruped designs, simulations on <span class=\"name\">Webots</span> robotic simulation framework.",
       "<i>I am almost done - I just need a team of brilliant scientists and engineers, some billion dollars and a several (unbounded) of decades of full dedication.</i> 😐",
@@ -289,7 +289,7 @@ const projects = [
     ]
   },
   {
-    "name": "IMU",
+    "name": "IMU (2020)",
     "description": "IMU (Inertial Measuring Unit) Experiments on mobile device. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
@@ -311,7 +311,7 @@ const projects = [
     ]
   },
   {
-    "name": "Boids + predators simu",
+    "name": "Boids + predators simu (2021)",
     "description": "Classical <a href=\"https://en.m.wikipedia.org/wiki/Boids\">Boids</a> simulation of emergent behaviour, extended with predators and short range void visual perception. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
     "media": [
       {
@@ -327,7 +327,7 @@ const projects = [
     ]
   },
   {
-    "name": "FFT sound analysis visualization",
+    "name": "FFT sound analysis visualization (2019)",
     "description": "Sound processing, FFT, frequency filtering, and visualization. <span class=\"name\">Java</span> + <span class=\"name\">Processing</span> framework.",
     "media": [
       {
@@ -337,7 +337,7 @@ const projects = [
     ]
   },
   {
-    "name": "Pool physics 2d & test bench",
+    "name": "Pool physics 2d & test bench (2022)",
     "description": [
       "Pool game dynamics, visualization, and virtual experimentation test bench (e.g., <i>'How thin should I hit a ball to displace it in an angle of 85 degrees?'</i>).",
       "This is what an engineer does when s/he sucks at playing pool in real life."
@@ -358,7 +358,7 @@ const projects = [
   //   ]
   // },
   {
-    "name": "Wind dynamics simu",
+    "name": "Wind dynamics simu (2023)",
     "description": [
       "Image decomposition and wind simulation. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
       "Includes primitives to define flow fields and whirlwinds."
@@ -372,7 +372,7 @@ const projects = [
     ]
   },
   {
-    "name": "2D Collisions optimization",
+    "name": "2D Collisions optimization (2021)",
     "description": [
       "2D spatial collisions algorithms optimizations. <span class=\"name\">p5.js</span> on <span class=\"name\">iOS</span>.",
       "Experiments..., experiments..., experiments!",
@@ -385,7 +385,7 @@ const projects = [
     ]
   },
   {
-    "name": "Warp",
+    "name": "Warp (2021)",
     "description": [
       "<i>A long time ago in a galaxy far, far away....</i>",
     ],
