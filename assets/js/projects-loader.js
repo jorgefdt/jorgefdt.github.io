@@ -95,7 +95,6 @@ function addMediaNodesAsCarousel(mediaDatas, projMediaNode) {
 
 // Creates DOM node to display mediaData. Returns null if error.
 function createMediaNode(mediaData) {
-  var mediaNode = null;
   var mediaTemplate;
   if (mediaData.type == "videoIframe") {
     mediaTemplate = "videoIframeWrapper-media-template";
@@ -107,26 +106,41 @@ function createMediaNode(mediaData) {
     mediaTemplate = "img-tall-media-template";
   }
 
+  var mediaNode = null;
   if (mediaTemplate) {
     var n = cloneTemplate(mediaTemplate);
+    
+    // Identify individual media sources.
     var ns = n.querySelectorAll(".j-source")[0];
     if (ns) {
       ns.setAttribute("src", mediaData.url);
       mediaNode = n;
 
       // Add custom media height.
-      customizeNodeHeight(ns, mediaData);
-    }
-    
-    // // Setup link
-    // var nsl = n.querySelectorAll(".j-source-link")[0];
-    // if (nsl) {
-    //   nsl.setAttribute("href", mediaData.url);
-    // }
+      customizeNodeHeight(ns, mediaData);      
+
+      // Make media clicable.
+      mediaNode = makeClicable(mediaNode, mediaData.url);
+    }    
   }
 
   return mediaNode;
 }
+
+
+function makeClicable(node, url) {
+  const linkNode = document.createElement("a");
+  linkNode.setAttribute("href", url);
+  linkNode.appendChild(node);
+  
+  // const formatNode = document.createElement("div");
+  // formatNode.style = "background-color: #ffd700;";
+  // formatNode.appendChild(node);  
+  // linkNode.appendChild(formatNode);
+
+  return linkNode;
+}
+
 
 // If possible, modifies node height dinamically as specified by mediaData.
 function customizeNodeHeight(node, mediaData) {
