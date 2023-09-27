@@ -48,6 +48,10 @@ const projects = [
         "type": "image",
         "url": "./projects/laser-scanner/front-w-lasers.png",
       },
+      {
+        "type": "image",
+        "url": "./projects/laser-scanner/mounted-proto.jpg",
+      },
     ]
   },  
   {
