@@ -53,7 +53,26 @@ const projects = [
         "url": "./projects/laser-scanner/mounted-proto.jpg",
       },
     ]
-  },  
+  },
+  {
+    "name": "Multi-press (December 2023)",
+    "description": [
+      "Many of my physical projects ended up with skewed holes.",
+      "No more skewing with my own drill-press!",
+      "Built using my <span class=\"name\">Prusa MK3S</span> 3d-printer, some v-slot profiles, a 12V motor and parts I had around. Designed using <span class=\"name\">Shapr3D</span>, as 3D modeling tool.",
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "./projects/multi-press/v3.jpg",
+        "whRatio": 1.4,
+      },
+      {
+        "type": "image",
+        "url": "./projects/multi-press/v3-model.jpg",
+      },
+    ]
+  },
   {
     "name": "Energency Box with metrics (August 2023)",
     "description": [
