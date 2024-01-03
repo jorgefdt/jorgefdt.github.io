@@ -64,13 +64,9 @@ const projects = [
     "media": [
       {
         "type": "image",
-        "url": "./projects/multi-press/v3.jpg",
-        "whRatio": 1.4,
-      },
-      {
-        "type": "image",
-        "url": "./projects/multi-press/v3-model.jpg",
-      },
+        "url": "./projects/multi-press/v3b.jpg",
+        "whRatio": 0.8,
+      }
     ]
   },
   {
